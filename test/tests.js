@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { add, multiply } from '../calculations.js';
+import { add, divide, multiply } from '../calculations.js';
 import { subtract } from '../calculations.js';
 
 const test = QUnit.test;
@@ -47,4 +47,16 @@ test ('multiplies two numbers 6 and 9', (expect) => {
     const actual = multiply(x, y);
 
     expect.equal(actual, expected);
+});
+
+test ('divides two numbers 10 and 5', (expect) => {
+
+    const x = 10;
+    const y = 5;
+    const expected = 2;
+
+    const actual = divide(x, y);
+
+    expect.equal(actual, expected);
+
 });
