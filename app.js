@@ -1,5 +1,5 @@
 // import functions
-
+import { add } from '../calculations.js';
 // reference needed DOM elements
 
 
